@@ -880,6 +880,8 @@ section .tabV ul {
     width: 90%;
 
     position: relative;
+
+    height: 22px; /*사파리 위치값 이슈 주의*/
     
 }
 
