@@ -901,6 +901,13 @@ header {
 
 }
 
+.sns a:hover {
+    background-color: #01e9bd;
+    color: white;
+
+    transition: color 0.5s ;
+}
+
 .sns a:last-child {
     margin-right: 0;
 }
