@@ -1,0 +1,1136 @@
+@charset "utp-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 노토 산스 kr 폰트 */
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Poiret+One&family=Shrikhand&display=swap');
+/* poiret , guruppo , shrikhand 폰트 */
+/* font-family: 'Gruppo', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Shrikhand', cursive; */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* Material Icons */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* Material Icons Outlined*/
+
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* font-awsome v5.10 */
+
+
+/* =================== 초기선언 ===================  */
+
+* {
+    padding: 0;
+    margin: 0;
+
+    /* outline: 1px solid springgreen; */
+
+
+    box-sizing: border-box;
+    /* 아예 성질 바꾸는 거 */
+
+}
+
+html,
+body {
+    cursor: url('../images/index/cursor.cur'), auto;
+}
+
+body {
+    min-width: 1280px;
+    /* 이거보다 작아지면 스크롤바 생김 */
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: black;
+
+    /* text-align: center; */
+}
+
+.box_1200 {
+    /* 1200px */
+    width: 1200px;
+
+    margin: 0 auto;
+
+    /* outline: 1px solid aqua; */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+
+/* =================== 공통 ===================  */
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+    color: black;
+}
+
+.w_h_100 {
+    width: 100%;
+    height: 100vh;
+}
+
+/* width: 100vW; 이거 했는데 이상한 스크롤바 생겨서 지웠다 */
+
+
+.dis_none {
+    display: none;
+    /* 임시 */
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.work, .about, .contact {
+    position: relative;
+}
+
+/* .work {
+    background-color: blanchedalmond;
+}
+
+.about {
+    background-color: cadetblue;
+}
+
+.contact {
+    background-color: cornflowerblue;
+} */
+
+.all_title {
+    /* >>> h2 말하는거임  */
+    position: absolute;
+
+    left: 7%;
+    top: 5.5%;
+    z-index: 0;
+}
+
+h2 {
+    position: relative;
+}
+
+h2::after {
+    content: "";
+
+    width: 10vw;
+    height: 1px;
+
+    /* background-color: rgba(116, 116, 116, 0.3); */
+    background-color: rgba(0, 124, 222, 0.3);
+
+
+    position: absolute;
+    top: 50%;
+    left: 130%;
+}
+
+h2, h4 {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+
+/* =================== 헤더 ====================  */
+
+
+header {
+
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    z-index: 1024;
+
+    /* background-color: rgba(255,255,255,0.3);
+    box-shadow: 0 0 100px rgb(0, 255, 64, 0.1); */
+}
+
+.logo {
+    display: inline-block;
+
+    width: 70px;
+    height: 40px;
+
+    background-image: url(../images/index/logo.svg);
+    background-size: 80%;
+    background-position: 0, 0;
+    background-repeat: no-repeat;
+
+    margin-left: 35px;
+
+}
+
+.logo:hover {
+    background-image: url(../images/index/logo_hv.svg); 
+}
+
+
+.gnb {
+    display: flex;
+
+    margin-right: 20px;
+}
+
+.gnb li {
+    margin-right: 70px;
+
+    font-size: 1.2rem;
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+
+}
+
+.gnb li a {
+    color: white;
+    /* color: springgreen; */
+    color: black;
+}
+
+.gnb li a:hover {
+    color: #01e9bd;
+
+    transition: all 0.2s;
+}
+
+/* =================== 메인 ====================  */
+
+.main {
+    /* background-color: rgb(44,83,70); */
+    /* background-color: rgb(31, 52, 45); */
+
+    background-image: url(../images/index/bg/bg_1.png);
+    background-size: cover;
+    background-position: 0,0;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: -1024;
+
+}
+
+
+.main_f {
+
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    height: 100vh;
+}
+
+
+.main_box {
+    width: 100%;
+
+    position: absolute;
+    top: 20%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main_box h1 {
+    font-size: 105px;
+
+    padding-left: 10%;
+
+    /* color: white; */
+    /* color: rgb(245,232,226); */
+    /* color: rgb(237, 237, 237); */
+    /* color: springgreen; */
+    color: black;
+
+    /* font-family: 'Gruppo', cursive; */
+    font-family: 'Poiret One', cursive;
+    /* font-family: 'Shrikhand', cursive; */
+
+}
+
+.snow_wh {
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    z-index: -100;
+
+    left: 0;
+    top: 0;
+}
+
+/* .cov {
+    커버인듯 ... 
+    
+    background-color: rgba(36, 36, 36, 0.1);
+
+    position: absolute;
+    z-index: -10;
+
+    width: 100%;
+    height: 100vh;
+} */
+
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+@keyframes arrow {
+    0% {
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+}
+
+
+.scroll_d {
+    height: 100px;
+    width: 100%;
+
+    /* background-color: springgreen; */
+
+    position: absolute;
+    bottom: 5%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.yzrs {
+    display: inline-block;
+
+    background-image: url(../images/index/main_yzrs/b_2.svg);
+    background-position: 0,0;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 40px;
+    height: 70px;
+
+    position: relative;
+
+
+    /* opacity: 0;
+    transform: translateY(-15px); */
+
+    animation: arrow 2.5s infinite;
+
+}
+
+.yzrs > span {
+
+    text-align: center;
+
+    display: inline-block;
+
+    width: 120px;
+    height: 30px;
+
+    position: absolute;
+    z-index: -10;
+
+    left: -99%;
+    top: -40%;
+
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    font-size: 1.35rem;
+}
+
+
+
+
+
+/* =================== 워크 ====================  */
+
+.work {
+    /* background-color: rgb(245,232,226); */
+    /* background-color: rgb(237, 237, 237); */
+}
+
+.wrk_f {
+    display: flex;
+}
+
+/* .wrk_L , .wrk_R {
+    width: 50%;
+} */
+
+.wrk_L {
+    width: 37%;
+}
+
+.wrk_R {
+    width: 63%;
+}
+
+/* ㅡㅡㅡㅡ워크 왼쪽ㅡㅡㅡㅡ */
+
+.wrk_box {
+    width: 72%;
+
+    margin-left: 28%;
+    margin-top: 45%;
+}
+
+.wrk_box .ovv, .wrk_box .color,
+.wrk_box .rspn, .wrk_box .sk {
+    margin-top: 26px;
+    
+}
+
+.wrk_ttl {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    font-size: 1.2rem;
+
+    /* margin-bottom: 2px; */
+}
+
+
+.wrk1_logo {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.wrk1_logo span {
+    color: rgba(0, 124, 222, 1);
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+
+.clr_box {
+    padding-top: 5px;
+}
+
+.clr_box span {
+    padding: 0 10px;
+    padding-bottom: 2px;
+
+    margin-right: 15px;
+
+    color: white;
+
+    font-size: 0.9rem;
+    font-weight: 300;
+
+
+}
+
+.clr_box span:first-child {
+    background-color: #231F20;
+}
+
+.clr_box span:nth-child(2) {
+    background-color: #4390DB;
+}
+
+.clr_box span:nth-child(3) {
+    background-color: #82BC00;
+}
+
+.clr_box span:last-child {
+    background-color: #FDB913;
+}
+
+.wrk_sk_box span{
+    padding: 0 5px;
+
+    padding-bottom: 2px;
+
+    /* margin-right: 10px; */
+
+    /* border: 1px solid black/; */
+}
+
+.wrk_sk_box span:first-child {
+    padding-left: 0;
+}
+
+
+.rspn span {
+    padding-bottom: 2px;
+}
+
+
+
+.in_blck {
+    display: inline-block;
+}
+
+.wrk_ttl.in_blck {
+    margin-right: 30px;
+}
+
+
+.wrk_box div p:first-child {
+    position: relative;
+}
+
+.wrk_box div p:first-child::before {
+
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+
+    width: 110%;
+    height: 13px;
+
+    /* background-color: #01e9bd; */
+    background-color: rgba(1,233,189,0.5);
+
+    z-index: -4;
+}
+
+
+
+
+/* ㅡㅡㅡㅡ워크 오른쪽ㅡㅡㅡㅡ */
+
+.wrk_R {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.wrk_rel {
+    position: relative;
+    height: 100%;
+
+    top: 43%;
+    /* left: 5%; */
+    left: 0;
+
+}
+
+/* ㅡㅡㅡㅡㅡ */
+
+
+@keyframes pc_hv{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.w_pc_box {
+    width: 800px;
+    height: 450px;
+
+    left: 5%;
+
+    box-shadow: 0 0 15px 5px rgba(1,233,189,0.2) ;
+
+
+    position: absolute;
+
+    overflow: hidden;
+}
+
+.w_pc {
+    position: absolute;
+
+    
+    /* width: 960px;
+    height: 540px; */
+    /* width: 720px;
+    height: 405px; */
+    width: 800px;
+    height: 450px;
+
+    /* top: 44%; */
+    /* left: 5%; */
+
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+
+
+    background-color: #01e9bd;
+    background-image: url(../images/index/pc_m/pc_720_hf_mint.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* box-shadow: 0 0 15px 5px rgba(1,233,189,0.2) ; */
+    /* border-radius: 10px; */
+
+
+}
+
+.w_pc:hover {
+    animation: pc_hv 1s 1;
+    animation-fill-mode: forwards;
+
+}
+
+.w_pc2 {
+    width: 800px;
+    height: 2060px;
+
+    position: absolute;
+    top: 44%;
+    /* left: 5%; */
+    left: 0;
+
+    z-index: 5;
+
+    background-image: url(../images/index/pc_m_hv/pc_hv_720.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* border-radius: 10px; */
+
+    animation: flow 6s ease infinite;
+
+
+}
+
+@keyframes flow{
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(-87.5%);
+    }
+}
+
+
+/* ㅡㅡㅡㅡㅡ모바일ㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+
+.w_m_box {
+
+    width: 240px;
+    height: 426px;
+
+    top: 20%;
+    right: 15%;
+
+    box-shadow: 0 0 15px 5px rgba(0,124,222,0.2) ;
+
+
+    position: absolute;
+
+    overflow: hidden;
+
+}
+
+
+
+.w_m {
+    position: absolute;
+
+    /* width: 320px;
+    height: 568px; */
+    width: 240px;
+    height: 426px;
+    
+    z-index: 20;
+
+    background-color: #007cde;
+    background-image: url(../images/index/pc_m/m_240_half_col.png);
+    background-position: 0,0;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* border-radius: 10px; */
+
+}
+
+.w_m:hover {
+    animation: pc_hv 1s 1;
+    animation-fill-mode: forwards;
+
+}
+
+.w_m2 {
+
+    width: 240px;
+    height: 2589px;
+
+    background-image: url(../images/index/pc_m_hv/m_hv_240.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    z-index: 15;
+
+    animation: flow2 8s ease infinite;
+
+
+}
+
+@keyframes flow2{
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-83.5%);
+    }
+}
+
+
+/* ㅡㅡㅡ링크 ㅡㅡㅡㅡ */
+
+
+.wrk_link {
+    margin-left: 5%;
+
+    position: absolute;
+
+    top: 63%;
+}
+
+.wrk_link a {
+    display: inline-block;
+
+    height: 31px;
+
+    padding: 2px 15px;
+    padding-top: 2px;
+
+    margin-right: 15px;
+
+    border: 1px solid #01e9bd;
+    color: #01e9bd;
+}
+
+.wrk_link a:hover {
+    background-color: #01e9bd;
+    color: white;
+
+    transition: all 0.5s ;
+}
+
+.wrk_link span {
+    font-size: 0.8rem;
+    color: #007cde;
+
+    padding-left: 120px;
+
+    animation: link 2s ease infinite;
+    
+}
+
+@keyframes link {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+/* =================== 어밧 ====================  */
+
+/* .about {
+    display: flex;
+} */
+
+.abt_f {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+    height: 50%;
+}
+
+
+.abt_L {
+    width: 50%;
+
+    margin-top: 20px;
+
+}
+
+
+.abt_R {
+    width: 80%;
+
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.blnk {
+    height: 120px;
+}
+
+.propic {
+    background-image: url(../images/index/gurt_logo_fin.png);
+    /* background-image: url(../images/index/gurt_logo_fin2.png); */
+    background-position: 50%,50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 45%;
+
+    /* margin-top: 90px; */
+
+}
+
+
+.daz_desu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.daz_desu span {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.daz_desu span.me {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+
+    font-size: 2rem;
+
+    position: relative;
+
+}
+
+.daz_desu span.me::before {
+    content: "";
+
+    position: absolute;
+    bottom: 3px;
+    left: -10%;
+
+    width: 120%;
+    height: 20px;
+
+    /* background-color: #01e9bd; */
+    background-color: rgba(1,233,189,0.5);
+
+    z-index: -4;
+
+}
+
+
+
+
+.mada {
+    /* color: rgba(116, 116, 116, 0.4); */
+    color: rgba(0, 124, 222, 0.4);
+
+    font-size: 0.8rem;
+
+
+}
+
+.abt_R h4 {
+    display: inline-block;
+    margin-bottom: 7px;
+
+    position: relative;
+}
+
+.abt_R h4::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+
+    width: 110%;
+    height: 13px;
+
+    /* background-color: #01e9bd; */
+    background-color: rgba(1,233,189,0.5);
+
+    z-index: -4;
+
+}
+
+.sk_rel {
+    position: relative;
+}
+
+.sk_box {
+    display: flex;
+
+}
+
+
+.sk_box div {
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid black;
+
+    margin-top: 3px;
+    margin-right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sk_box div:last-child {
+    margin-right: 0;
+}
+
+.sk_box div span {
+    font-size: 0.9rem;
+}
+
+.sk_box div:last-child span {
+    font-size: 0.8rem;
+}
+
+
+/* 포토샵 */
+.sk_box div:first-child {
+    border: 2px solid #31a8ff;
+}
+.sk_ps span {
+    color: #31a8ff;
+}
+
+
+/* 일러 */
+.sk_box div:nth-child(2) {
+    border: 2px solid #ff9a00;
+}
+.sk_ai span {
+    color: #ff9a00;
+}
+
+
+/* html */
+.sk_box div:nth-child(3) {
+    border: 2px solid #f1662b;
+}
+.sk_html span {
+    color: #f1662b;
+}
+
+/* css */
+.sk_box div:nth-child(4) {
+    border: 2px solid #2fa9dc;
+}
+.sk_css span {
+    color: #2fa9dc;
+}
+
+/* js */
+.sk_box div:nth-child(5) {
+    border: 2px solid #f0bf25;
+}
+.sk_js span {
+    color: #f0bf25;
+}
+
+/* jQ */
+.sk_box div:last-child{
+    border: 2px solid #1169ae;
+}
+.sk_jq span {
+    color: #1169ae;
+}
+
+
+
+
+
+
+
+
+
+.sk_rel .etc {
+    font-size: 0.8rem;
+
+    position: absolute;
+
+    right: 0;
+
+    padding-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================== 컨택 ====================  */
+
+.cntct_f {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1 {
+    font-size: 100px;
+
+    text-align: center;
+
+    font-family: 'Poiret One', cursive;
+
+}
+
+.sns {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+.sns a {
+    display: inline-block;
+
+    border: 1px solid rgba(1,233,189,1);
+    color: #01e9bd;
+
+    margin-right: 40px;
+
+    padding: 2px 15px 2px 10px;
+
+    display: flex;
+    text-align: center;    
+
+}
+
+.sns a:hover {
+    background-color: #01e9bd;
+    color: white;
+
+    transition: color 0.5s ;
+}
+
+.sns a:last-child {
+    margin-right: 0;
+}
+
+.sns a span {
+    padding: 3px 5px 2px 0;
+
+    font-size: 20px;
+}
+
+.sns a span:nth-child(2) {
+    display: none;
+}
+
+
+.sns_none {
+    display: inline;
+}
+
+
+
+
+
+/* =================== 푸터 ====================  */
+footer {
+    position: relative;
+}
+
+.zigzag {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(45deg, #01e9bd 25%, transparent 25%), linear-gradient(-45deg, #01e9bd 25%, transparent 25%);
+    background-size: 20px 20px;
+    background-position: -50px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+footer {
+    height: 100px;
+
+    /* background-color: rgb(31, 52, 45); */
+    /* background-color: black; */
+    background-color: #01e9bd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    /* color: rgb(237,237,237); */
+    /* color: rgb(245, 232, 226); */
+    /* color: rgb(116, 116, 116, 0.4); */
+    color: rgb(255,255,255);
+
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    
+
+}
