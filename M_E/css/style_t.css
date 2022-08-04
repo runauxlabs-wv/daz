@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* Moster Energy */
+/* max-width 1000 */
+/* 작업은 아이패드 미니 768px */
+
+/*
+Tablet Size css
+================================================ */
+
+
+
+/*
+COMMON
+================================================ */
+
+.title {
+    font-size: 5.5rem;
+
+}
+
+.s_title {
+    padding-top: 12vh;
+}
+
+.inner {
+    width: 95%;
+}
+
+
+/*
+Menu_modal
+================================================*/
+
+.m_txt a {
+    font-size: 6rem;
+}
+
+
+
+
+
+/*
+Promotion
+================================================ */
+
+
+.promo > h1 {
+    margin-top: 14vh;
+    text-align: center;
+    font-size: 4.5rem;
+
+}
+
+.pro_hash {
+    text-align: center;
+
+}
+
+/*
+Event
+================================================ */
+
+/* .evt_mv > iframe:first-child {
+    display: none;
+}
+
+.evt_mv > iframe:nth-child(2) {
+    display: none;
+} */
+
+.evt_mv > iframe.mv_pc {
+    display: none;
+}
+
+.evt_mv > iframe.mv_mo {
+    display: none;
+}
+
+.evt_mv > iframe.mv_ta {
+    display: block;
+}
+
+
+/*
+CONTACT
+================================================ */
+
+
+.contact .inner {
+    width: 90%;
+}
+
+.form_box {
+    margin-top: 3vh;
+}
+
+
+
+
+/*
+Swiper
+================================================ */
+
+.swiper {
+    margin-top: 8vh;
+}
+
+
