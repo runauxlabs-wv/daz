@@ -42,3 +42,28 @@ content_map
 .mp_info >ul:nth-child(2) {
     margin-top: 10px;
 }
+
+
+/*
+top_button
+================================================ */
+
+.top {
+    width: 35px;
+    height: 35px;
+
+    background-image: url(../../images/top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+
+}
+
+.top_fl {
+    display: flex;
+    justify-content: right;
+
+}
