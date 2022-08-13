@@ -1,0 +1,582 @@
+@charset "UTF-8";
+
+/*
+fonts
+================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+
+/*
+css import
+================================================ */
+/* @import url('about/01_greeting.css'); */
+
+
+/*
+GENERAL STYLING
+================================================ */
+
+* {
+    outline: 1px solid rgb(68, 221, 201);
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+
+}
+body {
+	color: rgb(30, 31, 30);
+    /* CBNU Black */
+
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+/*
+COMMON
+================================================ */
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+
+.inner {
+    max-width: 1200px;
+    width: 100%;
+
+    /* height: 100%; */
+    
+    outline: 1px solid rgb(20, 79, 255);
+
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+}
+
+
+.sub_bg_bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 10;
+    background-color: rgba(0,0,0,.4);
+
+    display: none;
+}
+
+
+/*
+Header
+================================================ */
+
+header {
+    height: 7.5vh;
+    background-color: white;
+
+    padding: 10px 0;
+
+    position: relative;
+    z-index: 100;
+}
+
+header::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    border: 1px solid rgb(183,38,84);
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+.hd_fl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+    width: 350px;
+    height: 45px;
+
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+.gnb_s {
+    width: calc( 100% - (350px));
+    
+}
+
+
+.gnb_fl {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+
+}
+
+.gnb {
+    width: 100%;
+    /* padding-top: 10px; */
+}
+
+.gnb > li {
+    width: 25%;
+    /* height: 100%; */
+    /* height: 6vh; */
+    text-align: center;
+
+}
+
+.gnb > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+
+
+    /* padding: 1vh 0; */
+
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.gnb > li:hover > a {
+    color: rgb(183,38,84);
+    font-weight: 600;
+}
+
+li.gnb_menu.on {
+    color: rgb(183,38,84);
+    font-weight: 600;
+}
+
+.gnb_menu > a.abt.on {
+    color: rgb(183,38,84);
+    font-weight: 600;
+}
+
+.gnb_menu > a.std.on {
+    color: rgb(183,38,84);
+    font-weight: 600;
+}
+
+.gnb_menu > a.glr.on {
+    color: rgb(183,38,84);
+    font-weight: 600;
+}
+.gnb_menu > a.sit.on {
+    color: rgb(183,38,84);
+    font-weight: 600;
+}
+
+
+li.sub_menu.on {
+    color: rgb(183,38,84);
+    font-weight: 500;
+
+}
+
+ul.sub {
+    width: 100%
+}
+
+
+.sub_rel {
+    position: relative;
+
+
+}
+
+
+.sub {
+    /* width: 100%; */
+
+    position: absolute;
+    /* top: 8vh; */
+
+    /* padding-top: 20px; */
+    left: 0;
+
+    z-index: 100;
+
+    display: none;
+}
+
+.sub > li {
+    width: 100%;
+    /* padding-top: 10px; */
+}
+
+.sub > li > a {
+    display: inline-block;
+    width: 100%;
+    /* padding-top: 20px; */
+
+    height: 50px;
+    line-height: 50px;
+
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.sub > li:hover > a {
+    color: rgb(183,38,84);
+    font-weight: 500;
+
+}
+
+
+.sub_bg {
+    position: relative;
+
+
+}
+
+
+
+/* ============== */
+
+.sub_col {
+    position: absolute;
+    top: calc(7.5vh - 10px );
+    left: 0;
+
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    width: 100%;
+
+    border-bottom: 2px solid rgb(183,38,84);
+
+    display: none;
+
+
+}
+
+.sub_l {
+    width: 350px;
+    height: 250px;
+
+    border-right: 2px solid rgb(183,38,84);
+
+    overflow: hidden;
+    
+}
+
+.sub_l > p {
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    padding: 10px 0 0 10px ;
+
+    color: rgb(183,38,84);
+
+    position: relative;
+} 
+
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    padding: 20px 0 0 10px ;
+    color: rgb(183,38,84);
+
+}
+
+.sub_logo {
+    width: 190px;
+    height: 190px;
+
+    background-image: url(../images/sub_logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+    left: 55%;
+    bottom: -5%;
+}
+
+
+/*
+Section 1
+================================================ */
+
+.sec1 {
+    height: calc(100vh - 24.5vh);
+    
+    background-image: url(../images/main_bg_15.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-color: aquamarine; */
+}
+
+.sec1 h1 {
+
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 35vh;
+    color: white;
+
+    padding-left: 80px;
+}
+
+.sec1 h1 + p {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 2.5vh;
+
+    padding-left: 80px;
+
+}
+
+.btn {
+
+    width: 200px;
+    height: 50px;
+
+    color: white;
+    font-size: 1.15rem;
+
+    border: 2px solid white;
+    /* border: 2px solid rgb(183,38,84); */
+
+    border-radius: 25px;
+
+    margin-top: 4vh;
+    margin-left: 80px;
+
+    transition: all 0.15s;
+
+}
+
+.btn:hover {
+    background-color: white;
+    /* background-color: rgb(183,38,84); */
+    color: black;
+}
+
+
+.btn > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*
+Section 2 - site
+================================================ */
+
+.sec2 {
+    height: 9vh;
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.st_fl {
+    height: inherit;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul.site_logo li {
+    height: 45px;
+    width: 160px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ul.site_logo li:nth-child(1) {
+    background-image: url(../images/sec2/1_s2_logo.png);
+} 
+
+ul.site_logo li:nth-child(2) {
+    background-image: url(../images/sec2/2_s_logo.png);
+} 
+
+ul.site_logo li:nth-child(3) {
+    background-image: url(../images/sec2/3_s2_logo.png);
+} 
+
+ul.site_logo li:nth-child(4) {
+    background-image: url(../images/sec2/4_s2_logo.png);
+} 
+
+ul.site_logo li:nth-child(5) {
+    background-image: url(../images/sec2/5_s2_logo.png);
+} 
+
+ul.site_logo li:nth-child(6) {
+    background-image: url(../images/sec2/6_s2_logo.png);
+} 
+
+ul.site_logo li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes flow {
+
+    0% {
+        transform: translateX(-100%);
+
+
+    }
+
+    100% {
+
+        transform: translateX(100%);
+
+    }
+}
+
+.ani_flow {
+    animation: flow 15s 0s infinite linear reverse;
+}
+
+
+/*
+top
+================================================ */
+
+.top {
+    width: 35px;
+    height: 35px;
+
+    background-image: url(../../images/top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+
+}
+
+.top_fl {
+    display: flex;
+    justify-content: right;
+
+}
+
+
+
+/*
+Footer
+================================================ */
+
+footer {
+    height: 8vh;
+    background-color: rgb(183,38,84);
+    /* background-color: rgb(94,93,92); */
+
+}
+
+.ft_fl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 8vh;
+}
+
+.f_logo {
+    width: 100px;
+    height: 50px;
+
+    background-image: url(../images/f_logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    opacity: 80%;
+
+}
+
+.f_logo > a {
+    width: 100%;
+    height: 100%;
+
+    display: inline-block;
+}
+
+.f_txt {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    opacity: 80%;
+}
+
+.f_per {
+    width: 160px;
+    height: 40px;
+
+    border: 1px solid white;
+    opacity: 90%;
+
+}
+
+.f_per > a {
+    color: white;
+    /* text-align: center; */
+    opacity: 90%;
+
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.15s;
+}
+
+.f_per > a:hover {
+    background-color: white;
+    opacity: 90%;
+
+    color: rgb(183,38,84);
+}
+
+
+

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+
+/*
+css import
+================================================ */
+@import url('../style.css');
+@import url('01_greeting.css');
+
+
+
+
+/*
+content_ organization
+================================================ */
+
+.org_box {
+    width: 600px;
+    height: 500px;
+
+    position: relative;
+
+}
+
+.org_line {
+
+    width: 430px;
+    height: 220px;
+    position: absolute;
+    left: 85px;
+    top: 45px;
+
+    z-index: -5;
+
+    background-image: url(../../images/org_line.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+
+.org_box > div:nth-child(3) {
+    margin-top: 50px;
+
+    justify-content: space-around;
+}
+
+.org_box > div:nth-child(4) {
+    margin-top: 85px;
+
+}
+
+.org_box > div:nth-child(4) > ul {
+    justify-content: space-between;
+}
+
+.org_fl {
+    display: flex;
+    justify-content: center;
+}
+
+.t_a_c {
+    text-align: center;
+}
+
+
+.org_h1 {
+    width: 200px;
+    height: 60px;
+
+    background-color: rgb(183,38,84);;
+    border-radius: calc(60px / 2);
+
+    font-size: 1.7rem;
+    font-weight: 500;
+
+    color: white;
+    text-align: center;
+
+    padding: 8px 0;
+
+}
+
+.org_h2 {
+
+    text-align: center;
+
+
+    width: 180px;
+    height: 55px;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    color: rgb(183,38,84);
+    background-color: white;
+
+    border-radius: calc(55px / 2);
+    border: 2px solid rgb(183,38,84);
+
+    padding: 5px 0;
+
+
+
+}
+
+.org_h3 {
+
+    width: 170px;
+    height: 50px;
+
+    border-radius: calc(50px / 2);
+
+    border: 2px solid rgb(30,31,30);
+    background-color: white;
+
+
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    padding: 12px 0;
+
+
+}
+
+.org_h4 {
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    margin-top: 30px;
+
+} 
+
+.org_h4 > li {
+
+    margin-bottom: 10px;
+}

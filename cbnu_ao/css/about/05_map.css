@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+
+/*
+css import
+================================================ */
+@import url('../style.css');
+@import url('01_greeting.css');
+
+
+
+/*
+content_map
+================================================ */
+
+#g_map {
+    width: 800px;
+    height: 400px;
+}
+
+
+
+.mp_info {
+
+    margin: 25px 0;
+
+}
+
+.mp_info_fl {
+    display: flex;
+}
+
+.mp_txt {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.mp_txt + li {
+    margin-left: 15px;
+}
+
+.mp_info >ul:nth-child(2) {
+    margin-top: 10px;
+}
