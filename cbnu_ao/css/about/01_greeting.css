@@ -206,3 +206,28 @@ content
 
     text-align: end;
 }
+
+
+/*
+top_button
+================================================ */
+
+.top {
+    width: 35px;
+    height: 35px;
+
+    background-image: url(../../images/top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+
+}
+
+.top_fl {
+    display: flex;
+    justify-content: right;
+
+}
