@@ -224,6 +224,19 @@
 
     <!-- Swiper Google_map -->
 
+    <script>
+        function myMap(){
+           var mapOptions = { 
+                 center:new google.maps.LatLng(51.508742, -0.120850),
+                 zoom:5
+           };
+      
+           var map = new google.maps.Map( 
+                  document.getElementById("g_map") 
+                 , mapOptions );
+        }
+     </script> 
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKHHFmo1Yl_MHLcC92iagFI0VcCAUuzZc&callback=myMap"></script>
 
 
