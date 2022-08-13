@@ -36,21 +36,21 @@ $(document).ready(function () {
     //   });
     // };
 
-    function myMap(){
-        // 2-2. 구글 맵의 옵션 
-        var mapOptions = { 
-              // 지도의 중앙 위치 : 영국 런던
-              center:new google.maps.LatLng(51.508742, -0.120850)
-              // 줌 레벨 : 5
-                 , zoom:5
-        };
+    // function myMap(){
+    //     // 2-2. 구글 맵의 옵션 
+    //     var mapOptions = { 
+    //           // 지도의 중앙 위치 : 영국 런던
+    //           center:new google.maps.LatLng(51.508742, -0.120850)
+    //           // 줌 레벨 : 5
+    //              , zoom:5
+    //     };
         
-        // 2. 구글 지도 생성(만들기)
-        // var map = new google.maps.Map(맵캔버스, 맵옵션들 );
-        var map = new google.maps.Map( 
-               document.getElementById("g_map") 
-              , mapOptions );
-     }
+    //     // 2. 구글 지도 생성(만들기)
+    //     // var map = new google.maps.Map(맵캔버스, 맵옵션들 );
+    //     var map = new google.maps.Map( 
+    //            document.getElementById("g_map") 
+    //           , mapOptions );
+    //  }
 
 
 
