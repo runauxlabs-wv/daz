@@ -156,7 +156,7 @@ content
     width: 100%;
 
     margin: 0 auto;
-    outline: 1px solid rgb(193, 159, 255);
+    /* outline: 1px solid rgb(193, 159, 255); */
 }
 
 .page_his {
@@ -231,3 +231,6 @@ top_button
     justify-content: right;
 
 }
+
+
+

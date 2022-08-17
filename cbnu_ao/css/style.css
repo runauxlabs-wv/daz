@@ -18,7 +18,7 @@ GENERAL STYLING
 ================================================ */
 
 * {
-    outline: 1px solid rgb(68, 221, 201);
+    /* outline: 1px solid rgb(68, 221, 201); */
     box-sizing: border-box;
 }
 
@@ -31,6 +31,9 @@ body {
     /* CBNU Black */
 
 	font-family: 'Noto Sans KR', sans-serif;
+
+    /* min-height: 1097px; */
+    /* min-width: 1000px; */
 }
 
 
@@ -51,7 +54,7 @@ p {
 
     /* height: 100%; */
     
-    outline: 1px solid rgb(20, 79, 255);
+    /* outline: 1px solid rgb(20, 79, 255); */
 
     margin: 0 auto;
 }
@@ -121,6 +124,20 @@ header::after {
     height: 100%;
     display: inline-block;
 }
+
+
+/* 
+m
+=========== */
+.menu_m {
+    display: none;
+}
+
+.menu_m_x {
+    display: none;
+
+}
+
 
 
 .gnb_s {
@@ -320,6 +337,18 @@ h4 {
 }
 
 
+/* ======= */
+
+a .m_arr {
+    display: none;
+}
+
+a .m_arr_u {
+    display: none;
+
+}
+
+
 /*
 Section 1
 ================================================ */
@@ -469,7 +498,7 @@ ul.site_logo li a {
 }
 
 .ani_flow {
-    animation: flow 15s 0s infinite linear reverse;
+    animation: flow 10s 0s infinite linear reverse;
 }
 
 
