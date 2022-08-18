@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/* HBD, Camille 모바일 */
+/* max-width 640px */
+
+
+/*
+Mobile Size css
+================================================ */
+
+body {
+     /* min-width: 320px;  */
+     min-width: 400px; 
+
+}
+
+
+
+/*
+
+================================================ */
+
+.bg {
+    height: auto;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.bg_ky {
+    width: 100%;
+    height: 500px;
+
+    left: 0;
+    top: 0;
+
+    bottom: auto;
+    right: auto;
+
+    margin-top: 95px;
+
+    opacity: 100%;
+
+    z-index: -10;
+}
+
+.checker {
+    width: 30%;
+    height: 615px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* border: none;
+    border-left: 3px solid black; */
+
+    z-index: -20;
+}
+
+.main {
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+
+.acc {
+    position: static;
+    height: 70px;
+    width: 100%;
+
+    margin-top: 0px;
+    margin-right: 0px;
+
+    border: none;
+    border-bottom: 3px solid black;
+
+    border-radius: 0;
+}
+
+.acc > p {
+    padding: 5px 0;
+    font-size: 30px;
+    /* line-height: 30px; */
+}
+
+
+.kayo {
+    bottom: -360px;
+}
+
+.hbd {
+    width: 100%;
+    padding-top: 0;
+}
+.hbd_t {
+    height: 200px;
+    margin-left: 0;
+    margin-top: 200px;
+
+    background-image: none;
+}
+
+.hbd_t p {
+    display: block;
+    font-size: 2.9rem;
+    font-family: 'Shrikhand', cursive;
+    padding: 0 10px;
+    padding-top: 40px;
+    line-height: 1.3;
+
+    color: white;
+    -webkit-text-stroke: 2px black;
+
+}
+
+h3 {
+    margin-left: 0;
+    width: auto;
+    font-size: 1.3rem;
+
+    background-color: white;
+
+    padding: 25px 35px;
+
+    border-top: 3px solid black;
+    border-bottom: 2px solid black;
+
+    color: white;
+    background-color: #3062CC;
+    /* background-color: #F4EBDA; */
+
+
+}
+
+.box_b {
+    margin-top: 0;
+    height: 400px;
+    margin-top: 70px;
+}
+
+
+.ohio {
+    background-position: bottom;
+}
+
+
+.box_r {
+    width: 100%;
+}
+
+.f_ky {
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/f_ky.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    z-index: 100;
+
+    top: auto;
+}
+
+.f_ky span {
+    /* animation: none; */
+    /* display: none; */
+
+    top: -80px;
+
+    font-size: 3rem;
+    left: 65px;
+}
+/* 
+.f_ky span {
+    font-size: 2rem;
+    left: 90px;
+} */
+
+
+.logo {
+
+    bottom: auto;
+
+    top: 420px;
+    right: 20px;
+
+    z-index: -5;
+
+    width: 170px;
+    height: 170px;
+
+}
+/* 
+.mawaru {
+    animation: rotate ease-in-out 10s re infinite;
+} */
+
+.letter {
+    flex-direction: column;
+    height: auto;
+}
+
+.let_env {
+    flex-direction: column;
+} 
+.nana_box {
+    width: 100%;
+    position: static;
+}
+
+.let_box {
+    width: 100%;
+    padding: 20px 0;
+}
+ 
+.let_l, .let_r {
+    width: 100%;
+}
+
+.let_r {
+    margin-top: 20px;
+}
+
+.let_20+p {
+    margin-top: 10%;
+}
+
+
+.nana {
+    width: 100%;
+    position: static;
+    height: 350px;
+}
+
+
+
+.footer {
+    position: static;
+}
+
+
+
+.sec2 {
+
+
+    position: static;
+
+
+
+
+    transform: translateY(0px);
+    transition: none;
+
+
+}
+
+.sec2:hover {
+    transform: translateY(0px);
+
+}
