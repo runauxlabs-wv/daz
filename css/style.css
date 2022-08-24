@@ -24,7 +24,7 @@ font-family: 'Shrikhand', cursive; */
     padding: 0;
     margin: 0;
 
-    /* outline: 1px solid rgb(229, 136, 255); */
+    /* outline: 1px solid rgb(252, 108, 46); */
 
 
     box-sizing: border-box;
@@ -145,6 +145,7 @@ h2, h4 {
 h4 {
     font-size: 1.2rem;
 }
+
 
 
 /* =================== 헤더 ====================  */
@@ -421,6 +422,8 @@ header {
     
 }
 
+
+
 .ovv_ {
     margin-bottom: 5px;
 }
@@ -450,6 +453,15 @@ header {
     font-weight: 900;
     font-size: 2.5rem;
 }
+
+.wrk1_logo > br {
+    display: none;
+}
+
+.wrk_ttl + br {
+    display: none;
+}
+
 
 .wrk1_logo span {
     color: rgba(0, 124, 222, 1);

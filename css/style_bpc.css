@@ -1,0 +1,33 @@
+@charset "utp-8";
+
+
+
+/* 
+big Pc (min-with 2150px)
+================================================= */
+
+
+/* 
+모바일 화면 박스 이동
+================================================= */
+
+.w_m_box {
+    position: static;
+    margin-left: 3%;
+}
+
+
+.wrk_rel {
+    display: flex;
+    align-items: center;
+}
+
+.hv_plz {
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+}
+
+.hv_plz.p3_hv {
+    bottom: 0%;
+}

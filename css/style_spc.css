@@ -1,0 +1,67 @@
+@charset "utp-8";
+
+
+
+
+/* 
+Small Pc (min-with 1280px) and (max-with 1750px)
+================================================= */
+
+
+
+/* 
+모바일 화면 박스 삭제
+================================================= */
+
+.wrk1_logo > br {
+    display: block;
+}
+.wrk_ttl + br {
+    display: block;
+}
+
+.rspn > p {
+    margin-bottom: 5px;
+}
+
+/* ----- */
+
+.w_m_box {
+    display: none;
+}
+
+.wrk_L {
+    width: 35%;
+}
+.wrk_R {
+    width: 60%;
+}
+
+.w_pc_box {
+    width: 700px;
+}
+
+.wrk_box{
+    /* width: 80%; */
+}
+
+.hv_plz {
+    position: absolute;
+    top: -6%;
+}
+
+.wrk_f {
+    justify-content: center;
+}
+
+.wrk_rel {
+    display: flex;
+    /* background-color: black; */
+    justify-content: center;
+}
+
+/* ------ */
+
+.clr_box span {
+    margin-right: 0;
+}

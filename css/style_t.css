@@ -1,0 +1,156 @@
+@charset "utp-8";
+
+
+
+/* 
+Tablet (min-with 760px) and (max-with 1279px)
+================================================= */
+
+body {
+    min-width: 760px;
+}
+
+
+.main_box h1 {
+    font-size: 5rem;
+}
+
+.wrk1_logo {
+    font-size: 2rem;
+}
+
+.wrk_f {
+    flex-direction: column-reverse;
+}
+
+.wrk_R, .wrk_L {
+    width: 100%;
+}
+
+
+.wrk_R {
+    align-items: center;
+}
+
+.wrk_L {
+    justify-content: center;
+}
+
+.wrk_link {
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrk_link .link_help {
+    display: none;
+}
+
+.wrk_link a {
+    padding: 0 90px;
+}
+
+.wrk_link a:nth-child(2) {
+    margin-right: 0;
+
+}
+
+.wrk_rel {
+    margin-top: 3%;
+}
+.w_pc_box {
+    width: 720px;
+    height: 405px;
+}
+
+.w_pc {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../images/index/resize_720_405/w_pc.png);
+}
+
+
+.w_pc.pj2_pc {
+    background-image: url(../images/index/resize_720_405/pj2_w_pc.png);
+
+}
+
+.w_pc.pj3_pc {
+    background-image: url(../images/index/resize_720_405/pj3_w_pc.png);
+
+}
+
+.w_pc.pj4_pc {
+    background-image: url(../images/index/resize_720_405/pj4_w_pc.png);
+
+}
+
+
+.w_pc2 {
+    display: none;
+}
+
+
+.w_pc:hover {
+    animation: none;
+}
+
+.w_m_box {
+    display: none;
+}
+
+.wrk_box {
+    width: auto;
+    margin-top: 2%;
+
+}
+
+.hv_plz {
+    display: none;
+}
+
+.propic {
+    height: 40%;
+    width: 90%;
+    margin: 0 auto;
+} 
+
+
+
+.abt_L {
+    width: auto;
+}
+
+
+.abt_R {
+    flex-direction: column;
+    width: auto;
+    margin-top: 3%;
+}
+
+
+.abt_R h4 {
+    margin-top: 15px;
+}
+
+/* ------------ */
+
+.contact h1 {
+    font-size: 4rem;;
+}
+
+
+
+/* --------- 스와이퍼 -------------- */
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, 
+.swiper-pagination-fraction {
+    bottom: 2%;
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+    top: 55%;
+}

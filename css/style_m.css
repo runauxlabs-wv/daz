@@ -1,0 +1,178 @@
+@charset "utp-8";
+
+
+
+@import url(../css/style_t.css);
+
+/* 
+Mobile (min-with 375px) and (max-with 759px)
+================================================= */
+
+
+
+body {
+    min-width: 375px;
+
+    font-size: 14px;
+
+}
+
+header{
+    flex-direction: column;
+
+    height: 80px;
+    background-color: white;
+
+    border-bottom: 2.5px dotted #01e9bd;
+
+
+}
+
+.logo {
+    width: 60px;
+    margin-left: 0;
+    background-position: center;
+
+    margin-top: 8px;
+}
+
+
+.gnb {
+    margin-right: 0;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+.gnb li {
+    margin-right: 25px;
+}
+
+.gnb li:last-child {
+    margin-right: 0px;
+
+}
+
+
+.main_box {
+    top: 25%;
+}
+
+.main_box h1 {
+    font-size: 3rem;
+    padding-left: 0;
+
+    text-align: center;
+}
+
+.wrk1_logo {
+    font-size: 1.5rem;
+}
+
+.wrk1_logo span {
+    font-size: 1.2rem;
+}
+
+.wrk1_logo span+span {
+    font-size: 0.9rem;
+}
+
+.wrk_link a {
+    padding: 0 45px;
+
+    height: 35px;
+    line-height: 35px;
+}
+
+.wrk_box .ovv, .wrk_box .color, .wrk_box .rspn, .wrk_box .sk {
+    margin-top: 20px;
+}
+
+.wrk_box .ovv {
+    margin-top: 5px;
+
+}
+
+.rspn > p {
+    margin-bottom: 5px;
+}
+
+.pj3_br + br {
+    display: block;
+}
+
+.wrk_box {
+    width: 90%;
+    text-align: center;
+}
+
+
+
+.w_pc_box {
+    width: 375px;
+    height: 211px;
+
+    box-shadow: none;
+}
+
+.w_pc_box.pj2_pc_b,
+.w_pc_box.pj4_pc_b {
+    box-shadow: none;
+
+}
+
+.clr_box span {
+    padding: 0px 8px;
+    margin-right: 8px;
+}
+
+
+
+.sk_m {
+    display: none;
+}
+
+
+.sk_box div {
+
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+
+}
+
+.blnk {
+    height: 50px;
+}
+
+
+
+
+
+
+
+.contact h1 {
+    font-size: 2rem;
+}
+
+.sns a {
+    margin-right: 22px;
+}
+
+
+
+/* -------------- */
+
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, 
+.swiper-pagination-fraction {
+    bottom: 1%;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    top: 50%;
+}
