@@ -591,6 +591,24 @@ header {
 
 }
 
+/* ===== project 5 color ==== */
+
+.clr_box.p5_col span:first-child {
+    background-color: #457241;
+
+}
+
+.clr_box.p5_col span:last-child {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+
+}
+
+
+
+
+
 
 .wrk_sk_box span{
     padding: 0 5px;
@@ -863,6 +881,36 @@ header {
 }
 
 
+/* ====== poject 5  pc ======== */
+
+
+.w_pc.pj5_pc {
+    background-image: url(../images/index/pc_m/p5_w_pc.png);
+
+
+}
+
+.w_pc2.pj5_pc2 {
+    background-image: url(../images/index/pc_m_hv/p5_w_pc2.png);
+
+    height: 1488px;
+
+    animation: pj5_pc_f 6s ease infinite;
+
+
+} 
+
+@keyframes pj5_pc_f {
+    0% {
+        transform: translateY(-15%);
+    }
+    100% {
+        transform: translateY(-83%);
+    }
+}
+
+
+
 
 /* ㅡㅡㅡㅡㅡ모바일ㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
@@ -1035,6 +1083,33 @@ header {
     }
 }
 
+/* ====== poject 5  m ======== */
+
+
+.w_m.pj5_m {
+    background-image: url(../images/index/pc_m/p5_w_m.png);
+
+
+}
+
+.w_m2.pj5_m2 {
+    background-image: url(../images/index/pc_m_hv/p5_w_m2.png);
+
+    height: 3167px;
+
+    animation: pj5_m_f 6s ease infinite;
+
+
+} 
+
+@keyframes pj5_m_f {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-86.5%);
+    }
+}
 
 
 

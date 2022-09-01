@@ -86,6 +86,11 @@ body {
 
 }
 
+.w_pc.pj5_pc {
+    background-image: url(../images/index/resize_720_405/pj5_w_pc.png);
+
+}
+
 
 .w_pc2 {
     display: none;
