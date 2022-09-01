@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import url(../css/style_t.css);
+
+/*
+Mobile (min-width : 375px) and (max-width: 767px)
+================================================ */
+
+
+/*
+GENERAL STYLING
+================================================ */
+
+body {
+    min-width: 375px;
+}
+
+.inner {
+    max-width: 90%;
+}
+
+
+
+.gnb {
+    width: 65%;
+    left: 17%;
+    font-size: .8rem;
+}
+
+
+
+/*
+About
+================================================ */
+
+.tit {
+    font-size: 1.8rem;
+}
+
+.abt_txt {
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+
+.abt_img {
+    height: 50px;
+    margin: 25px 0;
+}
+
+
+/*
+Main - Gallery
+================================================ */
+
+.grid {
+    width: auto;
+}

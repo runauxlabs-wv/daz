@@ -1,0 +1,458 @@
+@charset "UTF-8";
+
+
+/*
+fonts
+================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Rock+Salt&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Rock Salt', cursive; */
+
+
+
+/*
+GENERAL STYLING
+================================================ */
+
+* {
+    /* outline: 1px solid rgb(91, 235, 91); */
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+
+}
+body {
+	color: rgb(3, 3, 3);
+	font-family: 'Noto Sans KR', sans-serif;
+
+    /* background-color: #ecf4fc; */
+    background-color: white;
+
+    min-width: 1280px;
+
+}
+
+/*
+COMMON
+================================================ */
+
+p {
+    line-height: 1.7;
+}
+img {
+    max-width: 100%;
+}
+a:hover {
+    color: #457241;
+}
+
+.inner {
+
+    /* outline: 1px solid red; */
+    max-width: 1200px;
+    width: 100%;
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* 
+nav
+================================================ */
+
+.gnb {
+    height: 100px;
+    line-height: 100px;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    z-index: 10;
+    /* margin: 0 auto; */
+
+    font-size: 1.15rem;
+    
+
+}
+
+.gnb > ul > li > a {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.gnb > ul > li {
+    position: relative;
+}
+
+.gnb > ul > li:hover > a::before {
+    content: "♱";
+    position: absolute;
+    display: block;
+
+    width: 10px;
+    height: 10px;
+    font-size: 2rem;
+
+    left: -23px;
+    top: -3px;
+
+    /* background-color: #457241; */
+
+    z-index: -10;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*
+HEADER
+================================================ */
+
+header {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+}
+
+
+.hd_bg {
+    position: absolute;
+   
+    background-image: url(../images/bg_op_n.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 25%;
+
+    z-index: -20;
+
+}
+
+
+
+.hd_l > img , .hd_r > img {
+    height: auto;
+
+    filter: drop-shadow(0 0 15px #4572413e);
+
+    
+
+}
+
+
+.cnt_logo {
+    align-self: center;
+    margin-bottom: 7%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+
+}
+
+.cnt_logo > img {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    /* filter: drop-shadow(0 0 5px #457241); */
+
+}
+
+.hd_t {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    /* margin-bottom: 45%; */
+
+    /* font-family: 'Rock Salt', cursive; */
+}
+
+.sc_down {
+
+    position: absolute;
+    top: 40vh;
+    left: auto;
+
+    font-size: 2.5rem;
+
+    animation: down ease-in-out 1s alternate infinite;
+    
+   
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(0px);
+        opacity: 0%;
+
+    }
+
+    100% {
+        transform: translateY(50px);
+        opacity: 100%;
+
+    }
+}
+
+
+/*
+About
+================================================ */
+
+.abt {
+    width: 100%;
+    height: 400px;
+
+    background-color: #457241;
+}
+
+.info {
+    height: 100%;
+
+}
+
+.tit {
+
+    padding: 30px 0;
+
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.abt_txt {
+    text-align: center;
+
+    width: 65%;
+    margin: 0 auto;
+}
+
+.abt_txt p {
+    color: white;
+}
+
+.abt_txt p:first-child {
+    margin-bottom: 20px;
+}
+
+.abt_img {
+    width: auto;
+    height: 70px;
+    background-image: url(../images/g_logo_w.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin: 40px 0;
+}
+
+
+
+
+/*
+Main - Gallery
+================================================ */
+
+.gall .tit {
+    color: rgb(3, 3, 3);
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.grid {
+    width: 80vw;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    margin: 2rem auto;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.grid img:hover {
+    filter: grayscale(100%);
+}
+
+
+main {
+    margin-bottom: 5%;
+}
+
+
+/*
+Contact
+================================================ */
+
+
+
+
+.cnt {
+    height: 330px;
+
+    border-top: 3px dotted #457241;
+
+
+}
+
+.cnt_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.cnt p.tit {
+    color: rgb(3, 3, 3);
+}
+
+.cnt_txt {
+    font-size: 1.5rem;
+
+    position: relative;
+}
+
+.cnt_txt::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+
+    z-index: -10;
+    left: -2.5%;
+    bottom: 0;
+
+    height: 20px;
+    width: 105%;
+
+    background-color: #4572413e;
+    
+
+}
+
+.daz_pf {
+    margin-top: 30px;
+    width: 40%;
+    height: 50px;
+    line-height: 50px;
+
+    border: 1px solid #457241;
+}
+
+.daz_pf > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.daz_pf > a:hover {
+    background-color: #457241;
+    color: white;
+}
+
+
+
+
+
+
+/*
+Footer
+================================================ */
+
+footer {
+    height: 70px;
+    background-color: #457241;
+
+}
+
+.f_box {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+
+    position: relative;
+}
+
+
+.top {
+
+    position: absolute;
+
+    width: 45px;
+    height: 38px;
+    line-height: 38px;
+
+    /* border: 1px solid #457241; */
+    background-color: #457241;
+
+    right: 0;
+    top: -38px;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50% ;
+
+}
+
+.top span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    color: white;
+
+    font-size: 1.3rem;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+
+
+/*
+Lum-light
+================================================ */
+
+.lum-lightbox.lum-open {
+    z-index: 5;
+}
+
+.lum-lightbox-inner img {
+    max-width: 95vw;
+    max-height: auto;
+}
+
+
