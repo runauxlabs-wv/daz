@@ -1,5 +1,6 @@
 @charset "utp-8";
 
+@import url('../css/style.css');
 @import url('../css/style_t.css');
 
 
@@ -7,3 +8,214 @@
 Mobile
 (min-width: 360px) and (max-width: 743px)
 ================================================ */
+
+
+
+/*
+COMMON
+================================================ */
+
+body {
+    min-width: 360px;
+}
+
+.inner {
+    max-width: 340px;
+    width: 95%;
+}
+
+
+
+/*
+Header
+================================================ */
+
+header .t_menu {
+    display: none;
+}
+
+/*
+Nav
+================================================ */
+
+nav {
+    top: auto;
+    height: 60px;
+
+}
+
+.n_flx {
+    height: 60px;
+    justify-content: flex-end;
+}
+
+nav .gnb {
+    display: none;
+}
+
+
+.ico_m_menu {
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 26px;
+
+    margin-right: 5px;
+}
+
+
+
+
+/*
+Section 1
+================================================ */
+
+
+
+.con_r .ntc li a {
+    text-overflow: ellipsis;
+
+    font-size: 15px;
+
+}
+
+
+
+.con_b h2 {
+    font-size: 32px;
+}
+ 
+
+.con_b_1 {
+    width: 100%;
+    
+    word-break: keep-all;
+}
+
+.con_b_2 {
+    width: 100%;
+    word-break: keep-all;
+
+}
+
+
+
+.con_b_3 h4 {
+    text-align: center;
+}
+
+.con_b_3 .txt_sld .swp_02 {
+    padding: 0 20px;
+}
+
+.swiper-slide.swp_02_s a {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+/*
+Section 2
+================================================ */
+
+.sec2 {
+    margin-top: 320px;
+}
+
+.b_t_con1 > div {
+    width: 100%;
+    height: 75px;
+}
+
+.sbm_bg > div {
+    width: 100%;
+}
+
+
+/*
+Section 3
+================================================ */
+
+.sec3_exp_con > ul {
+    width: 100%;
+}
+
+
+
+/*
+Section 4
+================================================ */
+
+.sec4 .inner {
+    width: 100%;
+}
+
+.sec4_con {
+    height: 130px;
+}
+
+.sec4_con > h2 + p {
+    display: none;
+}
+
+.sec4_con > h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.blg_ico > div {
+    background-position: center;
+}
+
+/*
+Section 5
+================================================ */
+
+.ytb_con {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+Footer
+================================================ */
+
+.f_info .inner._flx {
+    flex-wrap: wrap;
+
+}
+
+.f_info .inner a {
+    font-size: 13px;
+}
+
+.f_info .inner a:nth-child(3) {
+    margin-right: 0;
+}
+
+.f_info .inner a:last-child {
+    display: none;
+}
+
+
+.cpy {
+    height: 140px;
+}
+
+.main_logo {
+    width: 35%;
+}
+
+.cpy ul > li:first-child {
+    display: none;
+}
