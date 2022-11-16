@@ -1,3 +1,355 @@
 @charset "utp-8";
 
 @import url('../css/style.css');
+
+
+/*
+Tablet
+(min-width: 744px) and (max-width: 1439px)
+================================================ */
+
+
+
+
+/*
+COMMON
+================================================ */
+
+body {
+    min-width: 744px;
+}
+
+.inner {
+    max-width: 720px;
+    width: 95%;
+}
+
+
+
+/*
+Header
+================================================ */
+
+.t_mn_l {
+    display: none;
+}
+
+
+.t_mn_r._flx {
+
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+/*
+Nav
+================================================ */
+
+
+.main_logo {
+    display: none;
+}
+
+
+.n_srch {
+    display: none;
+}
+
+
+.n_flx {
+    justify-content: center;
+}
+
+
+nav .gnb {
+    width: 100%;
+}
+
+
+
+/*
+Section 1
+================================================ */
+
+.main_box > .inner {
+    max-width: 744px;
+    width: 100%;
+}
+
+.con_box {
+    height: 266px;
+}
+
+.con_box .con_l {
+    display: none;
+}
+
+
+.sec1 .main_box .inner .con_r {
+    width: 100%;
+}
+
+.con_r .ntc > li:nth-child(2) {
+    height: calc(36px * 4);
+    overflow-y: auto;
+    
+}
+
+
+/* === 스크롤바 꾸미기 추가 === */
+
+.con_r .ntc > li:nth-child(2)::-webkit-scrollbar {
+    width: 5px;
+}
+
+.con_r .ntc > li:nth-child(2)::-webkit-scrollbar-thumb {
+    background-color: #DDDDDD;
+}
+
+.con_r .ntc > li:nth-child(2)::-webkit-scrollbar-track {
+    background-color: #F6F6F6;
+}
+
+
+/* =======  */
+
+
+.con_r .ntc li span {
+    padding-right: 10px;
+}
+
+
+.con_b {
+    flex-wrap: wrap;
+}
+
+.con_b_1 {
+    width: 50%;
+    
+    word-break: keep-all;
+}
+
+.con_b_2 {
+    width: 50%;
+    word-break: keep-all;
+
+}
+
+.con_b_3 {
+    width: 100%;
+}
+
+
+.con_b_3 .txt_sld .swp_02 {
+    height: 80px;
+    margin-top: 15px;
+
+    padding: 0 35px;
+}
+
+
+.swiper-slide.swp_02_s {
+
+    border-radius: none;
+
+    background-color: rgba(255, 255, 255, 0);
+
+
+}
+
+
+.swiper-slide.swp_02_s a {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+
+/*
+Section 2
+================================================ */
+
+.sec2 {
+    margin-top: 160px;
+}
+
+.bsn_ann .inner {
+    width: 100%;
+}
+
+.sec2 h2 {
+    padding: 55px 0 55px 0;
+}
+
+.bsn_type_con {
+    padding: 10px 0;
+    height: 260px;
+}
+
+.bsn_type_con>div>div {
+    /* b_t_con1 */
+
+    height: 240px;
+    overflow: auto;
+
+}
+
+.b_t_con1._flx {
+    justify-content: flex-start;
+}
+
+.b_t_con1 > div {
+    width: 22%;
+}
+
+
+
+/* === 스크롤바 꾸미기 추가 === */
+
+.bsn_type_con>div>div::-webkit-scrollbar {
+    width: 5px;
+}
+
+.bsn_type_con>div>div::-webkit-scrollbar-thumb {
+    background-color: #DDDDDD;
+}
+
+.bsn_type_con>div>div::-webkit-scrollbar-track {
+    background-color: #F6F6F6;
+}
+
+
+/* =======  */
+
+
+.sbm_bg > div {
+    width: 47%;
+}
+
+
+
+/*
+Section 3
+================================================ */
+
+.sec3_bg {
+    margin-top: 100px;
+}
+
+.sec3_exp_l {
+    width: 100%;
+}
+
+.sec3_exp_r {
+    display: none;
+}
+
+.sec3_exp_con .exp_con a {
+    justify-content: flex-start;
+}
+
+
+/*
+Section 4
+================================================ */
+
+.sec4 .inner {
+    width: 70%;
+}
+
+
+.sec4_con {
+    width: 50%;
+
+    padding: 13px;
+}
+
+.sec4 .inner ._flx {
+    margin-bottom: 100px;
+}
+
+
+.sec4 .inner .sec4_con {
+    border-bottom: 1px solid #999999;
+}
+
+
+
+
+.sec4_con:nth-child(even) {
+    border-right: none;
+    
+}
+
+.sec4 .inner .sec4_con:last-child {
+    border-right: 1px solid #999999;
+    border-bottom: none;
+} 
+
+.sec4_con > h2 a {
+    border-bottom: 3px solid #2788FF;
+}
+
+
+
+/*
+Section 5
+================================================ */
+
+.ytb_con {
+    width: 47%;
+}
+
+.sec5_ytb._flx {
+    justify-content: space-around;
+}
+
+
+
+/*
+Footer
+================================================ */
+
+.f_info .inner._flx {
+    justify-content: space-between;
+}
+
+
+.cpy_flx {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.cpy .inner .main_logo {
+    display: block;
+}
+
+.cpy .inner ul {
+    text-align: center;
+    line-height: 25px;
+}
+
+
+/*
+Floating menu
+================================================ */
+
+.flt_menu {
+    display: none;
+}
+
