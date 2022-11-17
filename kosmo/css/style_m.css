@@ -221,6 +221,14 @@ Section 4
     border-bottom: none;
 }
 
+.sec4_con > h2 a:hover {
+    border-bottom: 0px solid #2788FF;
+    
+}
+
+
+
+
 .blg_ico > div {
     background-position: center;
 }
