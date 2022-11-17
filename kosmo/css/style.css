@@ -55,7 +55,7 @@ GENERAL STYLING
 ================================================ */
 
 * {
-    outline: 1px solid rgb(235, 103, 91);
+/*     outline: 1px solid rgb(235, 103, 91); */
     box-sizing: border-box;
 }
 
@@ -95,7 +95,7 @@ a:hover {
 
 .inner {
 
-    outline: 1px solid rgb(25, 0, 255);
+/*     outline: 1px solid rgb(25, 0, 255); */
     max-width: 1400px;
     width: 100%;
 
