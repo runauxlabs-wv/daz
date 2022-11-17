@@ -1,16 +1,13 @@
 $(document).ready(function () {
-
-
   //리사이징 할때마다 새로고침
-      // var lastWidth = $(window).width();
-      // $(window).resize(function () {
-      //     if ($(window).width() != lastWidth) {
-      //         location.reload();
-      //         lastWidth = $(window).width();
-      //         return false;
-      //     }
-      // });
-
+  // var lastWidth = $(window).width();
+  // $(window).resize(function () {
+  //     if ($(window).width() != lastWidth) {
+  //         location.reload();
+  //         lastWidth = $(window).width();
+  //         return false;
+  //     }
+  // });
 
   // ====== Nav ===== //
 
@@ -51,7 +48,6 @@ $(document).ready(function () {
     // },
   });
 
-
   var swiper_04 = new Swiper(".mySwiper.swp_04", {
     slidesPerView: 5,
     spaceBetween: 40,
@@ -60,68 +56,66 @@ $(document).ready(function () {
     loopFillGroupWithBlank: true,
     autoplay: {
       delay: 1000,
-      disableOnInteraction : false,
-      pauseOnMouseEnter : true,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     },
-    
   });
 
   // ====== accordion ===== //
 
-
-
   $(".bsn_type").click(function () {
-
     $(".bsn_type_con").stop().slideToggle();
-  
-
   });
 
   $(".bsn_type").click(function () {
-
-    $(".ico_arr").toggleClass('on');
+    $(".ico_arr").toggleClass("on");
 
     // $(this).toggleClass('on').siblings().removeClass('on');
-
-    
   });
-
-
 
   // Tablet
   // =========================== //
 
-    if ($(window).width() < 1441) {
-
-      var swiper_02 = new Swiper(".mySwiper.swp_02", {
-        slidesPerView: 4,
-        spaceBetween: 0,
-    
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-      });
-   
-
-  };
-
-  // Mobile
-  // =========================== //
-
-
-  if ($(window).width() < 361) {
-
+  if ($(window).width() < 1440) {
     var swiper_02 = new Swiper(".mySwiper.swp_02", {
-      slidesPerView: 3,
-      spaceBetween: 20,
-  
+      slidesPerView: 4,
+      spaceBetween: 0,
+
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+    });
+  }
 
+  // Mobile
+  // =========================== //
+
+  if ($(window).width() < 744) {
+    $("#m_btn").click(function () {
+      // $(".nav_bg").stop().hide();
+      $(".gnb").stop().slideToggle();
+    });
+
+    $("nav ul.gnb >li").hover(
+      function () {
+        $("ul.sub, .nav_bg").stop().hide();
+        // $("ul.sub, .nav_bg").stop().show();
+      },
+      function () {
+        $("ul.sub, .nav_bg").stop().hide();
+        // $("ul.sub, .nav_bg").stop().hide();
+      }
+    );
+
+    var swiper_02 = new Swiper(".mySwiper.swp_02", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
 
     var swiper_04 = new Swiper(".mySwiper.swp_04", {
@@ -132,25 +126,20 @@ $(document).ready(function () {
       loopFillGroupWithBlank: true,
       autoplay: {
         delay: 1000,
-        disableOnInteraction : false,
-        pauseOnMouseEnter : true,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
-      
     });
-
-  };
-
-
+  }
 
   // scroll top 버튼
-    // =========================== //
-    $("#top").click(function () {
-      $("html, body").animate({
-          scrollTop: 0
-      }, 1000);
+  // =========================== //
+  $("#top").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
   });
-
-
-
-
 }); //ready end
