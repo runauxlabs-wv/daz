@@ -1,0 +1,434 @@
+@charset "utp-8";
+
+
+/*
+스타일 초기화
+================================================ */
+@import url('../css/destyle.css');
+
+/*
+fonts
+================================================ */
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 900;
+    src: url("../assets/fonts/NotoSansKR-Black.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+    src: url("../assets/fonts/NotoSansKR-Bold.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    src: url("../assets/fonts/NotoSansKR-Medium.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    src: url("../assets/fonts/NotoSansKR-Regular.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 300;
+    src: url("../assets/fonts/NotoSansKR-Light.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 100;
+    src: url("../assets/fonts/NotoSansKR-Thin.otf") format("OpenType");
+}
+
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+
+
+/*
+GENERAL STYLING
+================================================ */
+
+* {
+    outline: 1px solid rgb(44, 180, 78);
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+
+}
+
+body {
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+    background-color: white;
+
+    min-width: 1440px;
+
+    position: relative;
+}
+
+/*
+COMMON
+================================================ */
+
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover {
+    /* color: #457241; */
+}
+
+.inner {
+
+    outline: 1px solid rgb(14, 157, 214);
+    max-width: 1400px;
+    
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 10px;
+
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+._flx {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+
+/*
+Header
+================================================ */
+
+
+header .bg {
+
+    width: 100%;
+    height: 800px;
+
+
+    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.2), rgba(255,255,255,0.2) 3px, rgba(255,255,255,0.3) 0, rgba(255,255,255,0.3) 5px),url(../images/bg/bg_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+
+    margin-top: 200px;
+
+    grid-column: 6 / span 5;
+}
+
+
+.logo > h2 {
+
+    font-size: 19px;
+    font-weight: 600;
+
+    /* margin-bottom: 10px; */
+}
+
+.main_logo {
+    margin: 0 auto;
+    width: 450px;
+    height: 90px;
+
+    background-image: url(../images/euclid-logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_logo a {
+    display: block;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.main_logo a > h1 {
+
+    position: relative;
+    left: -9999px;
+}
+
+.main_logo + p {
+
+    margin-top: 15px;
+
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+
+    animation: opc 800ms infinite linear alternate;
+}
+
+
+@keyframes opc {
+    0% {
+        opacity: 20%;
+    }
+   
+    100% {
+        opacity: 100%;
+    }
+}
+
+.bg_sns {
+    color: #333 ;
+
+    position: absolute;
+
+    bottom: 50px;
+    right: 0;
+
+    text-align: center;
+
+}
+
+.bg_sns > ul {
+}
+
+.bg_sns > ul > li {
+    background-color: rgba(255,255,255,0.8);
+
+    width: 200px;
+    height: 40px;
+
+    font-size: 16px;
+    line-height: 16px;
+
+    
+
+    margin-bottom: 10px;
+
+    transition: all 300ms;
+}
+
+.bg_sns > ul > li:hover {
+    background-color: rgba(255,255,255,1);
+
+}
+
+
+.bg_sns > ul > li a {
+    width: 100%;
+    height: 100%;
+
+    padding: 10px 25px;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.bg_sns > ul > li a img {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Footer
+================================================ */
+
+footer {
+    background-color: rgba(178, 233, 253, 0.1);
+
+    padding: 35px 0px;
+}
+
+footer .inner {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 10px;
+
+    padding: 0 40px;
+}
+
+footer .inner .main_logo {
+    height: 50px;
+    width: 300px;
+    grid-column: 1 / span 3;
+}
+
+.cnt_r {
+    grid-column: 4 / span 11;
+
+    margin-left: 40px;
+
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.f_info {
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.f_info > li {
+    height: 28px;
+    line-height: 28px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+}
+
+
+.f_info >li > span {
+    padding-left: 20px;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    color: #595A64;
+
+    position: relative;
+
+}
+
+.f_info >li > span::after {
+    content: "";
+    position: absolute;
+    display: block;
+
+    width: 1px;
+    height: 10px;
+
+    left: 10px;
+    bottom: 5px;
+
+    background-color: #595A64;
+}
+
+
+.f_info >li:last-child > span {
+    padding-left: 0px;
+
+    color: #595A64;
+
+}
+
+.f_info >li:last-child > span::after {
+
+    display: none;
+}
+
+.f_info >li:last-child > span:nth-child(2) {
+    padding-left: 20px;
+
+}
+
+
+/* ==== sns ==== */
+
+
+.f_sns > li {
+
+    width: 35px;
+    height: 35px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin-right: 8px;
+
+    
+}
+
+.f_sns > li:first-child {
+    background-image: url(../images/facebook-btn.svg);
+}
+
+.f_sns > li:last-child {
+    background-image: url(../images/blog-btn.svg);
+
+    margin-right: 0;
+}
+
+
+.f_sns > li a {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+}
+
+.top_btn {
+    width: 43px;
+    height: 43px;
+
+    background-image: url(../images/top-btn.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 50%;
+    border: 1px solid rgba(190, 190, 190, 0.5);
+
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+
+    cursor: pointer;
+
+    transition: all 150ms;
+}
+
+.top_btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    
+}
