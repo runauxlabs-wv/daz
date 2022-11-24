@@ -1,0 +1,291 @@
+@charset "utp-8";
+
+@import url('../css/style.css');
+
+
+
+/*
+Tablet
+(min-width: 744px) and (max-width: 1439px)
+================================================ */
+
+
+/*
+COMMON
+================================================ */
+
+body {
+    min-width: 744px;
+}
+
+.inner {
+    max-width: 720px;
+    width: 95%;
+}
+
+
+/*
+Header
+================================================ */
+
+header .bg {
+    height: 500px;
+}
+
+.logo {
+    grid-column: 5 / span 5;
+    margin-top: 150px;
+}
+
+.main_logo  {
+    width: 250px;
+    height: 65px;
+}
+
+.logo > h2 {
+    display: none;
+}
+
+.main_logo + p {
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+
+
+/*
+Tab Content Box
+================================================ */
+
+
+.con_box {
+    height: 600px;
+
+}
+
+
+
+/*
+Section 1 - 01) lime net
+================================================ */
+
+#lime-net.con_box.on {
+    height: 920px;
+}
+
+#lime-net > .inner {
+    row-gap:0;
+}
+
+.sec1 .inner {
+    padding: 0 30px;
+}
+
+.con_l {
+    grid-column: 1 / span 12;
+    
+}
+
+.con_r {
+    margin-top: 0;
+    grid-column: 1 / span 12;
+
+}
+
+
+.con_r p {
+    margin-top: 0px;
+}
+
+
+
+/*
+Section 1 - 02) label - on
+================================================ */
+
+#label-on.con_box.on {
+    height: 1100px;
+}
+
+#label-on .con_l {
+    grid-column: 1 / span 12;
+}
+
+.sec1_b_l > p, .sec1_b_r > p {
+    font-size: 13px;
+}
+
+
+#label-on .con_r {
+    grid-column: 1 / span 12;
+    padding-left: 0px;
+
+}
+
+#label-on .con_r > div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    height: 440px;
+}
+
+.h_2022 {
+
+    grid-column: 1 / span 1;
+}
+
+.h_2022 > p {
+    padding-right: 20px;
+    margin-bottom: 0;
+}
+.h_2022 > p + ul {
+    margin-top: 0;
+    grid-column: 2/ span 6;
+
+    font-size: 13px;
+}
+
+
+.h_2021 {
+
+    margin-top: 0px;
+
+}
+
+.h_2021 > p {
+    padding-right: 20px;
+    margin-bottom: 0;
+
+}
+.h_2021 > p + ul {
+    margin-top: 0;
+    grid-column: 2/ span 6;
+    font-size: 13px;
+}
+
+
+.h_2020 > p + ul {
+    margin-top: 0;
+    font-size: 13px;
+
+}
+
+/*
+Section 1 - 03) lime dqm
+================================================ */
+
+#lime-dqm.con_box.on {
+    height: 1000px;
+}
+
+
+#lime-dqm .con_r {
+    grid-column: 1 / span 12;
+    padding-left: 0px;
+
+    margin-top: 0;
+
+}
+
+#lime-dqm .con_r > div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    height: 440px;
+}
+
+
+
+
+
+
+/*
+Section 1 - 04) lime edu
+================================================ */
+
+#lime-edu.con_box.on {
+    height: 900px;
+}
+
+#lime-edu > .inner {
+    row-gap:0;
+}
+
+#lime-edu .ex_list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+/*
+Section 1 - 05) AI
+================================================ */
+
+#eu-ai.con_box.on {
+    height: 730px;
+}
+
+
+
+#eu-ai > .inner > .inner {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    gap: 0 20px;
+}
+
+.con5_b > div:nth-child(1) {
+    grid-column: 1 / span 1;
+}
+
+
+.con5_b > div:nth-child(2) {
+    grid-column: 2 / span 1;
+
+}
+
+.con5_b > div:nth-child(3) {
+    grid-row: 2 / span 1;
+    grid-column: 1 /span 1;
+}
+
+.con5_b {
+    height: 420px;
+}
+
+
+
+/*
+Section 2 
+================================================ */
+
+.sec2 {
+    /* margin-top: 300px; */
+}
+
+.sec2_con .inner {
+    height: 800px;   
+}
+
+
+.sec2 .inner > h2 {
+    grid-column: 1 / span 5;
+}
+
+
+
+/*
+Footer
+================================================ */
+
+footer .inner .main_logo {
+    display: none;
+}
+
+.cnt_r {
+    margin-left: 0;
+    grid-column: 1 / span 14;
+
+}

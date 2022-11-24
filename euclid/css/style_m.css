@@ -1,0 +1,342 @@
+@charset "utp-8";
+
+@import url('../css/style.css');
+@import url('../css/style_t.css');
+
+
+/*
+Mobile
+(min-width: 360px) and (max-width: 743px)
+================================================ */
+
+
+
+/*
+COMMON
+================================================ */
+
+body {
+    min-width: 360px;
+}
+
+.inner {
+    max-width: 360px;
+    width: 100%;
+}
+
+
+/*
+Header
+================================================ */
+
+header .bg{
+    height: 250px;
+}
+
+.logo {
+    grid-column: 4 / span 6;
+    margin-top: 33px;
+}
+
+.main_logo {
+    width: 160px;
+    height: 45px;
+}
+
+.main_logo + p {
+    font-size: 15px;
+}
+
+.bg_sns {
+    bottom: 15px;
+}
+
+.bg_sns > ul > li {
+    margin-bottom: 5px;
+}
+
+
+
+/*
+Nav
+================================================ */
+
+
+nav .inner .swp_01 {
+    height: 40px;
+}
+
+nav .inner .swp_01 .swp_01_w > .swp_01_s {
+    font-size: 12px;
+}
+
+
+
+/*
+Section 1 - 01) lime net
+================================================ */
+
+#lime-net.con_box.on {
+    height: 1250px;
+}
+
+.con_l .sec1_ttl > h2 > span {
+    padding-left: 0;
+}
+
+.con_l .sec1_img {
+    flex-direction: column;
+    align-items: center;
+}
+
+.con_l .sec1_img > div:nth-child(1) {
+    grid-column: 1 / span 12 ;
+}
+
+.con_l .sec1_img > div {
+    margin-top: 10px;
+    width: 100%;
+    height: 240px;
+}
+
+
+
+/*
+Section 1 - 02) label - on
+================================================ */
+
+#label-on.con_box.on {
+    height: 1600px;
+}
+
+#label-on .inner {
+    grid-template-rows: repeat(2,1fr);
+}
+
+
+.sec1_b_txt {
+    grid-template-rows: repeat(2,1fr);
+}
+
+.sec1_b_l {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 1;
+}
+
+.sec1_b_r {
+    grid-column: 1 / span 8;
+    grid-row: 2 / span 1;
+}
+
+#label-on .con_r {
+    margin-top: 0;
+}
+#label-on .con_r > div {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    row-gap: 20px;
+}
+
+.h_2020 > p {
+    padding-right: 20px;
+}
+
+
+
+/*
+Section 1 - 03) lime dqm
+================================================ */
+
+#lime-dqm.con_box.on {
+    height: 1420px;
+}
+
+#lime-dqm .inner {
+    grid-template-rows: repeat(2,1fr);
+}
+
+
+#lime-dqm .con_r {
+    margin-top: 0;
+}
+#lime-dqm .con_r > div {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    row-gap: 20px;
+}
+
+.h_2020 > p {
+    padding-right: 20px;
+}
+
+
+
+/*
+Section 1 - 04) lime edu
+================================================ */
+
+#lime-edu.con_box.on {
+    height: 1250px;
+}
+
+#lime-edu .ex_list {
+    grid-template-columns: repeat(1,1fr)
+}
+
+
+/*
+Section 1 - 05) AI
+================================================ */
+
+#eu-ai.con_box.on {
+    height: 1050px;
+}
+
+#eu-ai > .inner > .inner {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    gap: 20px;
+    column-gap: 0;
+}
+
+.con5_b > div:nth-child(2) {
+    grid-column: 1 / span 1;
+}
+
+
+.con5_b {
+    height: 600px;
+}
+
+
+/*
+Section 2 
+================================================ */
+
+
+.sec2_con .inner {
+    width: 100%;
+    grid-template-rows: repeat(2,1fr 2fr);
+}
+
+.sec2_con .inner {
+    height: 1150px;
+}
+
+.sec2 .inner > h2 {
+    grid-column: 1/ span 16;
+    margin-bottom: 35px;
+
+    padding: 0 0;
+}
+
+.sec2_con {
+    grid-column: 1 / span 16;
+}
+
+.sec2 .inner {
+    padding: 0 30px;
+    row-gap: 20px;
+}
+
+.sec2_con .inner > div:first-child {
+    grid-column: 1/ span 14;
+}
+
+.sec2_con .inner > div:nth-child(2) {
+    grid-column: 1/ span 14;
+    grid-row: 2 / span 1;
+}
+
+.sec2_con .inner > div:nth-child(3) {
+    grid-column: 1/ span 14;
+    grid-row: 3 / span 1;
+}
+
+.sec2_con .inner > div:nth-child(4) {
+    grid-column: 1/ span 14;
+    grid-row: 4 / span 1;
+}
+
+.sec2_con .inner::after {
+
+    top: 44.5%;
+}
+
+.sec2_txt > ul > li {
+    margin-top: 10px;
+}
+
+
+
+
+/*
+Section 3
+================================================ */
+
+.sec3 .inner > h2 {
+    grid-column: 1/ span 16;
+    margin-bottom: 35px;
+
+    padding: 0 0;
+
+}
+
+.sec3 .sec3_con .inner div {
+    padding: 30px 10px;
+}
+
+.sec3_con h4 {
+    margin-bottom: 0;
+}
+
+.sec3_con h4 + p {
+    display: none;
+}
+
+.sec3 .sec3_con .inner div {
+    text-align: center;
+}
+
+.sec3 .sec3_con .inner div:nth-child(2) {
+    padding: 50px 10px;
+}
+
+.sec3 .sec3_con .inner div:nth-child(3) {
+    padding: 60px 10px;
+}
+
+.sec3 .sec3_con .inner div:nth-child(4) {
+    padding: 40px 10px;
+}
+
+
+
+/*
+Footer
+================================================ */
+
+.f_info  {
+    text-align: left;
+}
+
+
+.f_sns  {
+    display: none;
+}
+
+.f_info > li {
+    font-size: 12px;
+}
+
+.f_info >li > span {
+    font-size: 11px;
+}
+
+.f_info >li > span::after {
+    /* display: none; */
+    bottom : 2px
+}
