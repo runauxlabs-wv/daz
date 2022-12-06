@@ -1,4 +1,4 @@
 # daz
 design-web-site
 
-**Happy**
+~~Happy~~
